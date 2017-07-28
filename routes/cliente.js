@@ -7,9 +7,9 @@ module.exports = (app) => {
             clienteContrller
                 .buscar()
                 .then((c) => {
-                    console.log('buscar', c)
+
                     res.status(200)
-                    res.json({id: c.id, nome: c.login})
+                    res.json({ id: c.id, nome: c.login })
                 })
 
         })

@@ -2,7 +2,6 @@ const axios = require('axios')
 
 class Cliente {
     constructor() {
-        // this.cliente = cliente
     }
 
     async buscar() {
