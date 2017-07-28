@@ -1,0 +1,23 @@
+{
+  "name": "api-test-mocha-chai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "nock": "^9.0.14",
+    "supertest": "^3.0.0",
+    "testdouble": "^3.2.2"
+  },
+  "scripts": {
+    "test": "mocha --opts tests/integration/mocha.opts tests/integration/**/*.spec.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
