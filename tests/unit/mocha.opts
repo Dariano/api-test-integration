@@ -1,0 +1,4 @@
+--require tests/unit/helpers.js
+--reporter spec
+--watch
+--slow 500

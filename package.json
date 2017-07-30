@@ -16,7 +16,8 @@
     "testdouble": "^3.2.2"
   },
   "scripts": {
-    "test": "mocha --opts tests/integration/mocha.opts tests/integration/**/*.spec.js",
+    "test:integration": "mocha --opts tests/integration/mocha.opts tests/integration/**/*.spec.js",
+    "test:unit": "mocha --opts tests/unit/mocha.opts tests/unit/**/*.spec.js",
     "start": "node index.js"
   },
   "author": "",
