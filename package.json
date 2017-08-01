@@ -10,14 +10,16 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "nock": "^9.0.14",
     "supertest": "^3.0.0",
     "testdouble": "^3.2.2"
   },
   "scripts": {
-    "test:integration": "mocha --opts tests/integration/mocha.opts tests/integration/**/*.spec.js",
+    "test:integration": "mocha --opts tests/integration/mocha.opts tests/integration/**/*.spec.js -w",
     "test:unit": "mocha --opts tests/unit/mocha.opts tests/unit/**/*.spec.js",
+    "coverage": "istanbul cover _mocha -- --opts tests/unit/mocha.opts tests/unit/**/*.spec.js",
     "start": "node index.js"
   },
   "author": "",

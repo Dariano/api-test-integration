@@ -10,9 +10,10 @@ describe('Integração - Cliente', () => {
     });
 
 
-    it('Router GET/ clientes', (done) => {
+    it('Router GET /clientes', (done) => {
         request
             .get('/clientes')
+            .set('Authorization', '123456789')
             .end((err, res) => {
                 expect(res.statusCode).to.be.eql(200)
                 expect(res.body).to.be.eql({ id: 1, nome: 'Dariano' })
